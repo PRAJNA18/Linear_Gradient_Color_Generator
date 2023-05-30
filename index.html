@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient color generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|sofia">
+</head>
+<body>
+    <h1>Gradient Color generator</h1>
+    <div class="container">
+        <div class="gradient"></div>
+        <div class="optionselect">
+            <label for="Direction">Direction</label>
+            <select name="Direction" id="Direction" class="direction" onchange="generateGrad()">
+                <option value="to top">to top</option>
+                <option value="to bottom">to bottom</option>
+                <option value="to right">to right</option>
+                <option value="to left">to left</option>
+                <option value="to bottom right" selected>to bottom right</option>
+                <option value="to bottom left">to bottom left</option>
+                <option value="to top right">to top right</option>
+                <option value="to top left">to top left</option>
+            </select>
+            <label for="color">Colors</label>
+            <input type="color" name="color" id="color1" value="#2b8591" onchange="generateGrad()">
+            <input type="color" name="color" id="color2" value="#b34d92" onchange="generateGrad()">
+        </div>
+        <textarea class="txt" id="txt" name="txt" cols="35px" rows="2" >background: linear-gradient(to bottom right, #2b8591, #b34d92)</textarea>
+        <div class="buttons">
+            <button onclick="randGrad()">Random Gradient</button>
+            <button onclick="copycode()">Copy code</button>
+        </div>
+    </div>
+    <script src="funct.js"></script>
+</body>
+</html>

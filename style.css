@@ -1,0 +1,70 @@
+html{
+    min-height: 100%;
+}
+body{
+    margin: 0;
+    background: linear-gradient(to bottom right, #2b8591, #b34d92)
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 130px auto;
+    min-height: 300px;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px rgb(105, 100, 100);
+    backdrop-filter: blur(4px);
+}
+h1{
+    margin-top: 60px;
+    font-family: Cinzel;
+    text-shadow: 0px 2px 2px black;
+    text-align: center;
+    color: white;
+
+}
+
+.optionselect{
+    margin: 50px auto;
+    color: white;
+}
+.direction{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    border-radius: 10px; 
+    padding: 6px;
+}
+select option{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.txt{
+    margin:  auto;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    margin: 50px auto;
+    border-color: rgb(113, 113, 113);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: rgb(113, 113, 113);
+}
